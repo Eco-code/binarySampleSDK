@@ -17,13 +17,9 @@ let package = Package(
         // .package(url: /* package url */, from: "1.0.0"),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "binarySampleSDK",
-            dependencies: []),
-        .testTarget(
-            name: "binarySampleSDKTests",
-            dependencies: ["binarySampleSDK"]),
+        .binaryTarget(
+            name: "NTransitFramework",
+            url: "https://github.com/Eco-code/binarySampleSDK/blob/main/binarySampleSDK.zip",
+            checksum: "84d02c97cfd61c36fc6e0bb6b0f6801a8d9e15779e2d7c580180224d57a60876"),
     ]
 )
